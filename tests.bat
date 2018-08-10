@@ -1,1 +1,2 @@
-start C:\Users\keyf\Documents\"Visual Studio 2017"\Projects\LameTesting\LameTesting\bin\Debug\LameTesting.exe D:\lametest\test.wav "D:\lametest\3.99.5\lame.exe"  -V2 "D:\lametest\3.99.5\test.mp3" "D:\lametest\3.100\lame.exe"  -V2 "D:\lametest\3.100\test.mp3"
+cd "%~dp0"
+start LameTesting\bin\Debug\LameTesting.exe LameTestData\test.wav LameTestData\3.99.5\lame.exe  -V2 LameTestData\3.99.5\test.mp3 LameTestData\3.100\lame.exe  -V2 LameTestData\3.100\test.mp3
