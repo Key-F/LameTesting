@@ -1,0 +1,71 @@
+[10.08.2018 03:58:48.970][10.08.2018 04:11:40.933] 
+Wav: D:\lametest\3.99.5\test.wav 
+ Первый exe: D:\lametest\3.99.5\lame.exe args:(-V2) 
+ Второй exe: -V2 args:(D:\lametest\3.100\lame.exe)) 
+[10.08.2018 04:14:02.050] 
+Wav: D:\lametest\3.99.5\test.wav
+ Первый exe: D:\lametest\3.99.5\lame.exe args:(-V2)
+ Второй exe: D:\lametest\3.100\lame.exe args:(-V2))
+[10.08.2018 04:14:36.235] 
+Wav: D:\lametest\3.99.5\test.wav
+ Первый exe: D:\lametest\3.99.5\lame.exe args:(-V2)
+ Второй exe: D:\lametest\3.100\lame.exe args:(-V2))
+  У первой версии lame на конвертацию ушло 3706миллисекунд 
+  У второй версии lame на конвертацию ушло 3242миллисекунд 
+  mp3 файлы не совпадают 
+     [10.08.2018 04:33:55.907] 
+ Wav: D:\lametest\3.99.5\test.wav
+ Первый exe: D:\lametest\3.99.5\lame.exe args:(-V2)
+ Второй exe: D:\lametest\3.100\lame.exe args:(-V2)
+  У первой версии lame на конвертацию ушло 3756 миллисекунд 
+  У второй версии lame на конвертацию ушло 3241 миллисекунд 
+  mp3 файлы не совпадают 
+
+     [10.08.2018 04:35:23.703] 
+ Wav: D:\lametest\3.99.5\test.wav
+ Первый exe: D:\lametest\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: D:\lametest\3.100\lame.exe аргументы:(-V2)
+  У первой версии lame на конвертацию ушло 3693 миллисекунд 
+  У второй версии lame на конвертацию ушло 3234 миллисекунд 
+  mp3 файлы не совпадают 
+
+     [10.08.2018 04:37:55.029] 
+ Wav: D:\lametest\test.wav
+ Первый exe: D:\lametest\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: D:\lametest\3.100\lame.exe аргументы:(-V2)
+  У первой версии lame на конвертацию ушло 3687 миллисекунд 
+  У второй версии lame на конвертацию ушло 3201 миллисекунд 
+  mp3 файлы не совпадают 
+
+     [10.08.2018 04:40:02.185] 
+ Wav: D:\lametest\test.wav
+ Первый exe: D:\lametest\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: D:\lametest\3.100\lame.exe аргументы:(-V2)
+  Во время открытия второго mp3 файла возникло исключение: System.IO.FileNotFoundException: Файл 'D:\lametest\3.100\test.mp3' не найден.
+Имя файла: 'D:\lametest\3.100\test.mp3'
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в LameTesting.Program.FileCompare(String file1, String file2) в c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\Program.cs:строка 122 
+
+     [10.08.2018 04:41:38.646] 
+ Wav: D:\lametest\test.wav
+ Первый exe: D:\lametest\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: D:\lametest\3.100\lame.exe аргументы:(-V2)
+  Во время открытия второго mp3 файла возникло исключение: System.IO.FileNotFoundException: Файл 'D:\lametest\3.100\test.mp3' не найден.
+Имя файла: 'D:\lametest\3.100\test.mp3'
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в LameTesting.Program.FileCompare(String file1, String file2) в c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\Program.cs:строка 123 
+  mp3 файлы не совпадают 
+
+     [10.08.2018 04:47:31.975] 
+ Wav: D:\lametest\test.wav
+ Первый exe: D:\lametest\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: D:\lametest\3.100\lame.exe аргументы:(-V2)
+  У первой версии lame на конвертацию ушло 3665 миллисекунд 
+  У второй версии lame на конвертацию ушло 3204 миллисекунд 
+  mp3 файлы не совпадают 

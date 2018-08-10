@@ -14,68 +14,121 @@ namespace LameTesting
     {
         static void Main(string[] args)
         {
-            string exepath = args[0];
-            string wavpath = args[1];
-            string input = args[2];
-            string param = args[3];
+           
+            string wavpath = args[0]; // Путь к входному wav файлу
 
-            
+            string exepath4first = args[1]; // Путь к первой тестируемой версии
+            string param4first = args[2]; // Аргументы к первой тестируемой версии
+            string mp3first = args[3]; // Где будет храниться выходной mp3 первой версии
 
-            
+            string exepath4second = args[4]; // Путь к второй тестируемой версии
+            string param4second = args[5]; // Аргументы к второй тестируемой версии
+            string mp3second = args[6]; // Где будет храниться выходной mp3 второй тестируемой версии
 
-            
-            ConvertTimeMeasure(exepath, wavpath, input, param);
-            bool tt = FileCompare(@"D:\lametest\3.99.5\test.mp3", @"D:\lametest\3.100\test.mp3");
+            Setlogs(wavpath, exepath4first, param4first, exepath4second, param4second);
+
+            long firsttime = ConvertTimeMeasure(exepath4first, wavpath, param4first, mp3first);
+            AddToLog("У первой версии lame на конвертацию ушло " + firsttime + " миллисекунд");
+
+            long secondtime = ConvertTimeMeasure(exepath4second, wavpath, param4second, mp3second);
+            AddToLog("У второй версии lame на конвертацию ушло " + secondtime + " миллисекунд");
+
+            if (FileCompare(mp3first, mp3second))
+                AddToLog("mp3 файлы совпадают");
+            else AddToLog("mp3 файлы не совпадают");
+
 
         }
 
-        private static long ConvertTimeMeasure(string exepath, string wavpath, string input, string param)
+        private static long ConvertTimeMeasure(string exepath, string wavpath, string param, string mp3path)
         {
-            string lameEXE = exepath;
-            string lameArgs = "-V2";
-
-            string wavFile = wavpath;
-            string mp3File = @"D:\lametest\3.99.5\test.mp3";
-
+            
             Process process = new Process();
             process.StartInfo = new ProcessStartInfo();
-            process.StartInfo.FileName = lameEXE;
+            process.StartInfo.FileName = exepath;
             process.StartInfo.UseShellExecute = false;
             process.StartInfo.RedirectStandardOutput = true; 
             process.StartInfo.Arguments = string.Format(
                 "{0} {1} {2}",
-                lameArgs,
-                wavFile,
-                mp3File);
+                param,
+                wavpath,
+                mp3path);
 
-            Stopwatch watch = new Stopwatch();            
-            process.Start();
+            Stopwatch watch = new Stopwatch();
+            try
+            {
+                process.Start();
+            }
+            catch (Exception e)
+            {
+                AddToLog("Exception при запуске Lame: " + e);
+                return 0;
+            }
             watch.Start();            
             process.WaitForExit();
             watch.Stop();
             long timepassed = watch.ElapsedMilliseconds;
+            
            
             return timepassed;
         }
 
        
 
-        private static void Setlogs(string logpath)
+        private static void Setlogs(string wavpath, string exe4first, string param4first, string exe4second, string param4second)
         {
-            // string writer
+            string pathToLog = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Log");
+            if (!Directory.Exists(pathToLog))
+                Directory.CreateDirectory(pathToLog); // Создаем директорию, если нужно
+            string filename = Path.Combine(pathToLog, string.Format("{0}_{1:dd.MM.yyy}.log",
+            AppDomain.CurrentDomain.FriendlyName, DateTime.Now));
+            string dateText = string.Format("\r\n     [{0:dd.MM.yyy HH:mm:ss.fff}] \r\n", DateTime.Now);
+            string testInfo = string.Format(" Wav: {0}\r\n Первый exe: {1} аргументы:({2})\r\n Второй exe: {3} аргументы:({4})\r\n", 
+                wavpath, exe4first, param4first, exe4second, param4second);
+           
+            File.AppendAllText(filename, dateText, Encoding.GetEncoding("Windows-1251"));
+            File.AppendAllText(filename, testInfo, Encoding.GetEncoding("Windows-1251"));
+        }
 
+        private static void AddToLog(string info)
+        {
+            string pathToLog = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Log");
+            if (!Directory.Exists(pathToLog))
+                Directory.CreateDirectory(pathToLog); // Создаем директорию, если нужно
+            string filename = Path.Combine(pathToLog, string.Format("{0}_{1:dd.MM.yyy}.log",
+            AppDomain.CurrentDomain.FriendlyName, DateTime.Now));
+            string Text = string.Format("  {0} \r\n", info);
+           
+            File.AppendAllText(filename, Text, Encoding.GetEncoding("Windows-1251"));           
         }
 
         private static bool FileCompare(string file1, string file2)
         {
             int file1byte;
             int file2byte;
-            FileStream fs1;
-            FileStream fs2;
-                       
-            fs1 = new FileStream(file1, FileMode.Open);
-            fs2 = new FileStream(file2, FileMode.Open);
-            
+            FileStream fs1 = null;
+            FileStream fs2 = null;
+
+            try
+            {
+                fs1 = new FileStream(file1, FileMode.Open);
+            }
+            catch (Exception e)
+            {
+                AddToLog("Во время открытия первого mp3 файла возникло исключение: " + e);
+                return false;
+            }
+
+            try
+            {
+                fs2 = new FileStream(file2, FileMode.Open);
+            }
+            catch (Exception e)
+            {
+                AddToLog("Во время открытия второго mp3 файла возникло исключение: " + e);
+                return false;
+            }
+
             if (fs1.Length != fs2.Length)
             {               
                 fs1.Close();
