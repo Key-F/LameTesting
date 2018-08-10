@@ -3,4 +3,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartArguments>D:\lametest\test.wav "D:\lametest\3.99.5\lame.exe"  -V2 "D:\lametest\3.99.5\test.mp3" "D:\lametest\3.100\lame.exe"  -V2 "D:\lametest\3.100\test.mp3"</StartArguments>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartArguments>D:\lametest\test.wav "D:\lametest\3.99.5\lame.exe"  -V2 "D:\lametest\3.99.5\test.mp3" "D:\lametest\3.100\lame.exe"  -V2 "D:\lametest\3.100\test.mp3"</StartArguments>
+  </PropertyGroup>
 </Project>

@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using System.IO;
 using System.Threading;
-using System.Security.Cryptography;
 
 namespace LameTesting
 {
@@ -24,19 +23,21 @@ namespace LameTesting
             string exepath4second = args[4]; // Путь к второй тестируемой версии
             string param4second = args[5]; // Аргументы к второй тестируемой версии
             string mp3second = args[6]; // Где будет храниться выходной mp3 второй тестируемой версии
-
-            Setlogs(wavpath, exepath4first, param4first, exepath4second, param4second);
-
+           
             long firsttime = ConvertTimeMeasure(exepath4first, wavpath, param4first, mp3first);
-            AddToLog("У первой версии lame на конвертацию ушло " + firsttime + " миллисекунд");
-
+           
             long secondtime = ConvertTimeMeasure(exepath4second, wavpath, param4second, mp3second);
-            AddToLog("У второй версии lame на конвертацию ушло " + secondtime + " миллисекунд");
 
-            if (FileCompare(mp3first, mp3second))
-                AddToLog("mp3 файлы совпадают");
-            else AddToLog("mp3 файлы не совпадают");
+            bool equal = FileCompare(mp3first, mp3second);
 
+            string results =
+            ("У первой версии lame на конвертацию ушло " + firsttime + " миллисекунд \r\n") +
+            ("У второй версии lame на конвертацию ушло " + secondtime + " миллисекунд \r\n");         
+            if (equal)
+                results += ("mp3 файлы совпадают \r\n");
+            else results += ("mp3 файлы не совпадают \r\n");
+
+            Setlogs(wavpath, exepath4first, param4first, exepath4second, param4second, results);
 
         }
 
@@ -68,14 +69,13 @@ namespace LameTesting
             process.WaitForExit();
             watch.Stop();
             long timepassed = watch.ElapsedMilliseconds;
-            
-           
+                       
             return timepassed;
         }
 
        
 
-        private static void Setlogs(string wavpath, string exe4first, string param4first, string exe4second, string param4second)
+        private static void Setlogs(string wavpath, string exe4first, string param4first, string exe4second, string param4second, string results)
         {
             string pathToLog = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Log");
             if (!Directory.Exists(pathToLog))
@@ -88,6 +88,7 @@ namespace LameTesting
            
             File.AppendAllText(filename, dateText, Encoding.GetEncoding("Windows-1251"));
             File.AppendAllText(filename, testInfo, Encoding.GetEncoding("Windows-1251"));
+            File.AppendAllText(filename, results, Encoding.GetEncoding("Windows-1251"));
         }
 
         private static void AddToLog(string info)
@@ -97,7 +98,7 @@ namespace LameTesting
                 Directory.CreateDirectory(pathToLog); // Создаем директорию, если нужно
             string filename = Path.Combine(pathToLog, string.Format("{0}_{1:dd.MM.yyy}.log",
             AppDomain.CurrentDomain.FriendlyName, DateTime.Now));
-            string Text = string.Format("  {0} \r\n", info);
+            string Text = string.Format("[{0:dd.MM.yyy HH:mm:ss.fff}]  {1} \r\n", DateTime.Now, info);
            
             File.AppendAllText(filename, Text, Encoding.GetEncoding("Windows-1251"));           
         }

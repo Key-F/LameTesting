@@ -1,0 +1,6 @@
+c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\bin\Release\LameTesting.exe.config
+c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\bin\Release\LameTesting.exe
+c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\bin\Release\LameTesting.pdb
+c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\obj\Release\LameTesting.csprojResolveAssemblyReference.cache
+c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\obj\Release\LameTesting.exe
+c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\obj\Release\LameTesting.pdb

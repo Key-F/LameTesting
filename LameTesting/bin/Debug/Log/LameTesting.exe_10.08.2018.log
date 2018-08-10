@@ -461,3 +461,448 @@ Wav: D:\lametest\3.99.5\test.wav
   У первой версии lame на конвертацию ушло 3591 миллисекунд 
   У второй версии lame на конвертацию ушло 3207 миллисекунд 
   mp3 файлы не совпадают 
+
+     [10.08.2018 05:51:54.188] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+
+     [10.08.2018 05:51:54.200] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+  У первой версии lame на конвертацию ушло 30 миллисекунд 
+  У второй версии lame на конвертацию ушло 24 миллисекунд 
+  mp3 файлы не совпадают 
+  У первой версии lame на конвертацию ушло 3579 миллисекунд 
+  У второй версии lame на конвертацию ушло 3156 миллисекунд 
+  mp3 файлы не совпадают 
+
+     [10.08.2018 05:53:28.027] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+
+     [10.08.2018 05:53:28.057] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V9)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V9)
+
+     [10.08.2018 05:53:28.061] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+  У первой версии lame на конвертацию ушло 28 миллисекунд 
+  У второй версии lame на конвертацию ушло 23 миллисекунд 
+  mp3 файлы не совпадают 
+  У первой версии lame на конвертацию ушло 3647 миллисекунд 
+  У первой версии lame на конвертацию ушло 4976 миллисекунд 
+  У второй версии lame на конвертацию ушло 3207 миллисекунд 
+  Во время открытия второго mp3 файла возникло исключение: System.IO.IOException: Процесс не может получить доступ к файлу "C:\Users\keyf\Documents\Visual Studio 2017\Projects\LameTesting\LameTestData\3.100\test.mp3", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в LameTesting.Program.FileCompare(String file1, String file2) в c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\Program.cs:строка 124 
+  mp3 файлы не совпадают 
+  У второй версии lame на конвертацию ушло 2223 миллисекунд 
+  mp3 файлы не совпадают 
+
+     [10.08.2018 05:56:41.567] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+
+     [10.08.2018 05:56:41.601] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V9)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V9)
+
+     [10.08.2018 05:56:41.603] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+  У первой версии lame на конвертацию ушло 26 миллисекунд 
+  У второй версии lame на конвертацию ушло 24 миллисекунд 
+  mp3 файлы не совпадают 
+  У первой версии lame на конвертацию ушло 3726 миллисекунд 
+  У первой версии lame на конвертацию ушло 5113 миллисекунд 
+  У второй версии lame на конвертацию ушло 3253 миллисекунд 
+  Во время открытия второго mp3 файла возникло исключение: System.IO.IOException: Процесс не может получить доступ к файлу "C:\Users\keyf\Documents\Visual Studio 2017\Projects\LameTesting\LameTestData\3.100\test.mp3", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в LameTesting.Program.FileCompare(String file1, String file2) в c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\Program.cs:строка 124 
+  mp3 файлы не совпадают 
+  У второй версии lame на конвертацию ушло 2235 миллисекунд 
+  mp3 файлы не совпадают 
+
+     [10.08.2018 05:58:50.522] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+
+     [10.08.2018 05:58:50.539] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V9)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V9)
+
+     [10.08.2018 05:58:50.552] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+  У первой версии lame на конвертацию ушло 31 миллисекунд 
+  У второй версии lame на конвертацию ушло 33 миллисекунд 
+  mp3 файлы не совпадают 
+  У первой версии lame на конвертацию ушло 3629 миллисекунд 
+  У первой версии lame на конвертацию ушло 4998 миллисекунд 
+  У второй версии lame на конвертацию ушло 3250 миллисекунд 
+  Во время открытия второго mp3 файла возникло исключение: System.IO.IOException: Процесс не может получить доступ к файлу "C:\Users\keyf\Documents\Visual Studio 2017\Projects\LameTesting\LameTestData\3.100\test.mp3", так как этот файл используется другим процессом.
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в LameTesting.Program.FileCompare(String file1, String file2) в c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\Program.cs:строка 124 
+  mp3 файлы не совпадают 
+  У второй версии lame на конвертацию ушло 2256 миллисекунд 
+  mp3 файлы не совпадают 
+
+     [10.08.2018 06:01:33.064] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+
+     [10.08.2018 06:01:33.084] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V9)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V9)
+
+     [10.08.2018 06:01:33.096] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+  У первой версии lame на конвертацию ушло 33 миллисекунд 
+  У второй версии lame на конвертацию ушло 37 миллисекунд 
+  mp3 файлы не совпадают 
+  У первой версии lame на конвертацию ушло 3714 миллисекунд 
+  У первой версии lame на конвертацию ушло 5114 миллисекунд 
+  У второй версии lame на конвертацию ушло 3228 миллисекунд 
+  mp3 файлы не совпадают 
+  У второй версии lame на конвертацию ушло 2233 миллисекунд 
+  mp3 файлы не совпадают 
+
+     [10.08.2018 06:11:53.440] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+
+     [10.08.2018 06:11:53.467] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V9)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V9)
+
+     [10.08.2018 06:11:53.478] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+  У первой версии lame на конвертацию ушло 26 миллисекунд 
+  У второй версии lame на конвертацию ушло 24 миллисекунд 
+  mp3 файлы не совпадают 
+  У первой версии lame на конвертацию ушло 3591 миллисекунд 
+  У первой версии lame на конвертацию ушло 4928 миллисекунд 
+  У второй версии lame на конвертацию ушло 3248 миллисекунд 
+  mp3 файлы не совпадают 
+  У второй версии lame на конвертацию ушло 2216 миллисекунд 
+  mp3 файлы не совпадают 
+[10.08.2018 06:13:55.298]  Exception при запуске Lame: System.ComponentModel.Win32Exception (0x80004005): Не удается найти указанный файл
+   в System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   в System.Diagnostics.Process.Start()
+   в LameTesting.Program.ConvertTimeMeasure(String exepath, String wavpath, String param, String mp3path) в c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\Program.cs:строка 61 
+[10.08.2018 06:13:55.302]  Exception при запуске Lame: System.ComponentModel.Win32Exception (0x80004005): Не удается найти указанный файл
+   в System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   в System.Diagnostics.Process.Start()
+   в LameTesting.Program.ConvertTimeMeasure(String exepath, String wavpath, String param, String mp3path) в c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\Program.cs:строка 61 
+[10.08.2018 06:13:55.315]  Во время открытия первого mp3 файла возникло исключение: System.IO.DirectoryNotFoundException: Не удалось найти часть пути "D:\lametest\3.99.5\test.mp3".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в LameTesting.Program.FileCompare(String file1, String file2) в c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\Program.cs:строка 115 
+
+     [10.08.2018 06:13:55.316] 
+ Wav: D:\lametest\test.wav
+ Первый exe: D:\lametest\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: D:\lametest\3.100\lame.exe аргументы:(-V2)
+У первой версии lame на конвертацию ушло 0 миллисекунд /r/nУ второй версии lame на конвертацию ушло 0 миллисекунд /r/nmp3 файлы не совпадают /r/n
+     [10.08.2018 06:14:09.175] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+У первой версии lame на конвертацию ушло 27 миллисекунд /r/nУ второй версии lame на конвертацию ушло 28 миллисекунд /r/nmp3 файлы не совпадают /r/n
+     [10.08.2018 06:14:15.969] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+У первой версии lame на конвертацию ушло 3646 миллисекунд /r/nУ второй версии lame на конвертацию ушло 3228 миллисекунд /r/nmp3 файлы не совпадают /r/n
+     [10.08.2018 06:14:16.358] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V9)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V9)
+У первой версии lame на конвертацию ушло 4993 миллисекунд /r/nУ второй версии lame на конвертацию ушло 2249 миллисекунд /r/nmp3 файлы не совпадают /r/n[10.08.2018 06:17:09.971]  Exception при запуске Lame: System.ComponentModel.Win32Exception (0x80004005): Не удается найти указанный файл
+   в System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   в System.Diagnostics.Process.Start()
+   в LameTesting.Program.ConvertTimeMeasure(String exepath, String wavpath, String param, String mp3path) в c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\Program.cs:строка 61 
+[10.08.2018 06:17:09.976]  Exception при запуске Lame: System.ComponentModel.Win32Exception (0x80004005): Не удается найти указанный файл
+   в System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   в System.Diagnostics.Process.Start()
+   в LameTesting.Program.ConvertTimeMeasure(String exepath, String wavpath, String param, String mp3path) в c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\Program.cs:строка 61 
+[10.08.2018 06:17:09.988]  Во время открытия первого mp3 файла возникло исключение: System.IO.DirectoryNotFoundException: Не удалось найти часть пути "D:\lametest\3.99.5\test.mp3".
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в LameTesting.Program.FileCompare(String file1, String file2) в c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\Program.cs:строка 115 
+
+     [10.08.2018 06:17:09.989] 
+ Wav: D:\lametest\test.wav
+ Первый exe: D:\lametest\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: D:\lametest\3.100\lame.exe аргументы:(-V2)
+У первой версии lame на конвертацию ушло 0 миллисекунд 
+У второй версии lame на конвертацию ушло 0 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:18:10.920] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+У первой версии lame на конвертацию ушло 31 миллисекунд 
+У второй версии lame на конвертацию ушло 29 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:18:17.645] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+У первой версии lame на конвертацию ушло 3620 миллисекунд 
+У второй версии lame на конвертацию ушло 3192 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:18:18.084] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V9)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V9)
+У первой версии lame на конвертацию ушло 4998 миллисекунд 
+У второй версии lame на конвертацию ушло 2237 миллисекунд 
+mp3 файлы не совпадают 
+[10.08.2018 06:20:38.240]  Exception при запуске Lame: System.ComponentModel.Win32Exception (0x80004005): Не удается найти указанный файл
+   в System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   в System.Diagnostics.Process.Start()
+   в LameTesting.Program.ConvertTimeMeasure(String exepath, String wavpath, String param, String mp3path) в c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\Program.cs:строка 61 
+[10.08.2018 06:20:38.244]  Exception при запуске Lame: System.ComponentModel.Win32Exception (0x80004005): Не удается найти указанный файл
+   в System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   в System.Diagnostics.Process.Start()
+   в LameTesting.Program.ConvertTimeMeasure(String exepath, String wavpath, String param, String mp3path) в c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\Program.cs:строка 61 
+
+     [10.08.2018 06:24:29.389] 
+ Wav: D:\lametest\test.wav
+ Первый exe: D:\lametest\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: D:\lametest\3.100\lame.exe аргументы:(-V2)
+У первой версии lame на конвертацию ушло 3654 миллисекунд 
+У второй версии lame на конвертацию ушло 3201 миллисекунд 
+mp3 файлы не совпадают 
+[10.08.2018 06:29:28.517]  Exception при запуске Lame: System.ComponentModel.Win32Exception (0x80004005): Не удается найти указанный файл
+   в System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
+   в System.Diagnostics.Process.Start()
+   в LameTesting.Program.ConvertTimeMeasure(String exepath, String wavpath, String param, String mp3path) в c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\Program.cs:строка 61 
+[10.08.2018 06:29:28.520]  Во время открытия первого mp3 файла возникло исключение: System.IO.FileNotFoundException: Файл 'C:\Users\keyf\Documents\Visual Studio 2017\Projects\LameTesting\128' не найден.
+Имя файла: 'C:\Users\keyf\Documents\Visual Studio 2017\Projects\LameTesting\128'
+   в System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   в System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   в System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   в System.IO.FileStream..ctor(String path, FileMode mode)
+   в LameTesting.Program.FileCompare(String file1, String file2) в c:\users\keyf\documents\visual studio 2017\Projects\LameTesting\LameTesting\Program.cs:строка 115 
+
+     [10.08.2018 06:29:28.522] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-b)
+ Второй exe: LameTestData\3.99.5\test4.mp3 аргументы:(LameTestData\3.100\lame.exe)
+У первой версии lame на конвертацию ушло 8 миллисекунд 
+У второй версии lame на конвертацию ушло 0 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:29:28.568] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+У первой версии lame на конвертацию ушло 36 миллисекунд 
+У второй версии lame на конвертацию ушло 30 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:29:35.509] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+У первой версии lame на конвертацию ушло 3685 миллисекунд 
+У второй версии lame на конвертацию ушло 3357 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:29:35.889] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V9)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V9)
+У первой версии lame на конвертацию ушло 5142 миллисекунд 
+У второй версии lame на конвертацию ушло 2265 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:31:19.745] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+У первой версии lame на конвертацию ушло 36 миллисекунд 
+У второй версии lame на конвертацию ушло 24 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:31:27.037] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+У первой версии lame на конвертацию ушло 3962 миллисекунд 
+У второй версии lame на конвертацию ушло 3431 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:31:27.428] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V9)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V9)
+У первой версии lame на конвертацию ушло 5416 миллисекунд 
+У второй версии lame на конвертацию ушло 2337 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:31:27.915] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-b 128)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-b 128)
+У первой версии lame на конвертацию ушло 4371 миллисекунд 
+У второй версии lame на конвертацию ушло 3854 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:33:31.761] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+У первой версии lame на конвертацию ушло 37 миллисекунд 
+У второй версии lame на конвертацию ушло 31 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:33:39.559] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+У первой версии lame на конвертацию ушло 4236 миллисекунд 
+У второй версии lame на конвертацию ушло 3693 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:33:40.110] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V9)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V9)
+У первой версии lame на конвертацию ушло 5892 миллисекунд 
+У второй версии lame на конвертацию ушло 2548 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:33:40.506] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-b 320)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-b 320)
+У первой версии lame на конвертацию ушло 4753 миллисекунд 
+У второй версии lame на конвертацию ушло 4040 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:33:40.575] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-b 128)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-b 128)
+У первой версии lame на конвертацию ушло 4727 миллисекунд 
+У второй версии lame на конвертацию ушло 4135 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:39:03.410] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+У первой версии lame на конвертацию ушло 109 миллисекунд 
+У второй версии lame на конвертацию ушло 40 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:39:03.415] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V5)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V5)
+У первой версии lame на конвертацию ушло 59 миллисекунд 
+У второй версии lame на конвертацию ушло 45 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:39:03.478] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V9)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V9)
+У первой версии lame на конвертацию ушло 61 миллисекунд 
+У второй версии lame на конвертацию ушло 54 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:39:03.549] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-b 320)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-b 320)
+У первой версии lame на конвертацию ушло 42 миллисекунд 
+У второй версии lame на конвертацию ушло 29 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:39:03.550] 
+ Wav: LameTestData\microtest.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-b 128)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-b 128)
+У первой версии lame на конвертацию ушло 43 миллисекунд 
+У второй версии lame на конвертацию ушло 30 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:39:11.372] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V5)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V5)
+У первой версии lame на конвертацию ушло 4339 миллисекунд 
+У второй версии lame на конвертацию ушло 3830 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:39:11.947] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V2)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V2)
+У первой версии lame на конвертацию ушло 4755 миллисекунд 
+У второй версии lame на конвертацию ушло 4037 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:39:12.389] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-V9)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-V9)
+У первой версии lame на конвертацию ушло 6573 миллисекунд 
+У второй версии lame на конвертацию ушло 2597 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:39:12.888] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-b 128)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-b 128)
+У первой версии lame на конвертацию ушло 5250 миллисекунд 
+У второй версии lame на конвертацию ушло 4405 миллисекунд 
+mp3 файлы не совпадают 
+
+     [10.08.2018 06:39:12.942] 
+ Wav: LameTestData\test.wav
+ Первый exe: LameTestData\3.99.5\lame.exe аргументы:(-b 320)
+ Второй exe: LameTestData\3.100\lame.exe аргументы:(-b 320)
+У первой версии lame на конвертацию ушло 5278 миллисекунд 
+У второй версии lame на конвертацию ушло 4403 миллисекунд 
+mp3 файлы не совпадают 
